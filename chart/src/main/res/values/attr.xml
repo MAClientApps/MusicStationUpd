@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="chart_axisBorderSpacing" format="dimension">
+    </attr>
+    <attr name="chart_axisColor" format="reference|color">
+    </attr>
+    <attr name="chart_axisThickness" format="dimension">
+    </attr>
+    <attr name="chart_axisTopSpacing" format="dimension">
+    </attr>
+    <attr name="chart_barSpacing" format="dimension">
+    </attr>
+    <attr name="chart_fontSize" format="dimension">
+    </attr>
+    <attr name="chart_labelColor" format="reference|color">
+    </attr>
+    <attr name="chart_labels" format="boolean">
+    </attr>
+    <attr name="chart_setSpacing" format="dimension">
+    </attr>
+    <attr name="chart_shadowColor" format="reference|color">
+    </attr>
+    <attr name="chart_shadowDx" format="dimension">
+    </attr>
+    <attr name="chart_shadowDy" format="dimension">
+    </attr>
+    <attr name="chart_shadowRadius" format="dimension">
+    </attr>
+    <attr name="chart_typeface" format="string">
+    </attr>
+    <attr name="checkboxStyle" format="reference">
+    </attr>
+    <attr name="checkedTextViewStyle" format="reference">
+    </attr>
+    <attr name="closeIcon" format="reference">
+    </attr>
+    <attr name="closeItemLayout" format="reference">
+    </attr>
+    <attr name="collapseContentDescription" format="string">
+    </attr>
+    <attr name="collapseIcon" format="reference">
+    </attr>
+    <attr name="color" format="color">
+    </attr>
+    <attr name="colorAccent" format="color">
+    </attr>
+    <attr name="colorBackgroundFloating" format="color">
+    </attr>
+</resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "515178303855",
+    "project_id": "music-station-6f979",
+    "storage_bucket": "music-station-6f979.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515178303855:android:1dfcecab9a9369366f989a",
+        "android_client_info": {
+          "package_name": "com.lakshitasuman.musicstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515178303855-3g3efket1i0ghu3v6n65ra1298vbv10e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCAuI8te6KarvdHvW8OxYcxy3P6Xblv2d4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515178303855-3g3efket1i0ghu3v6n65ra1298vbv10e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lakshitasuman.musicstation.musicplayer.HeeboRegular
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"
+        android:text="Visualizer"
+        android:textColor="#fff"
+        android:textSize="@dimen/_16sdp" />
+
+    <LinearLayout
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:visibility="gone"
+        android:layout_weight="9"
+        android:orientation="vertical" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wave_img"
+
+            />
+        <androidx.cardview.widget.CardView
+            app:cardElevation = "16dp"
+            app:cardCornerRadius = "160dp"
+            android:id="@+id/rotateImage"
+            android:foregroundGravity = "center"
+            android:layout_centerInParent = "true"
+            android:layout_gravity="center"
+            android:layout_width = "250dp"
+            android:layout_height = "250dp">
+            <ImageView
+                android:scaleType = "centerCrop"
+                android:src = "@drawable/music_disc"
+                android:layout_width = "match_parent"
+                android:layout_height = "match_parent"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

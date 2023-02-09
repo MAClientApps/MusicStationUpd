@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_10sdp"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/laymain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/_5sdp"
+        android:paddingRight="@dimen/_5sdp">
+
+        <ImageView
+            android:id="@+id/setnone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/setname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/_5sdp"
+            android:singleLine="true"
+            android:text="@string/name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+        <ImageView
+            android:id="@+id/btnselect"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/unpresed2" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

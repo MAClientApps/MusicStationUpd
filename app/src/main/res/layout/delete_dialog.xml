@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="682px"
+    android:layout_height="623px"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/round_list_item"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/recordingView"
+        android:layout_width="60dp"
+        android:background="@android:color/transparent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/delete_json" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/are_you_sure"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:fontFamily="@font/heebo_bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/do_you_really_went_to_delete_n_these_record"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="12dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/heebo_regular"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="80dp"
+            android:text="@string/done"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:id="@+id/done"
+            android:fontFamily="@font/heebo_bold"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tab_selected_background"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="80dp"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:id="@+id/cancle"
+            android:fontFamily="@font/heebo_bold"
+            android:background="@drawable/tab_selected_background"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

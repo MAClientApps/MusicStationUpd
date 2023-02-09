@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/voice_bg"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:id="@+id/lltop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/back"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+
+               android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5"
+            android:gravity="center">
+
+            <com.lakshitasuman.musicstation.musicplayer.HeeboRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="@string/recording"
+                android:id="@+id/tv_header"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/lineView"
+        android:layout_below="@id/lltop"
+        android:background="@color/dividerColor"
+        android:orientation="horizontal" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/layout_stored_data"
+        android:layout_below="@+id/layout_header"
+        android:layout_weight="8.2"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/secondLayout"
+            android:visibility="gone"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/recordingView"
+                android:layout_width="300dp"
+                android:background="@android:color/transparent"
+                android:layout_height="300dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/recording" />
+
+            <TextView
+                android:id="@+id/tv_record1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:fontFamily="@font/heebo_bold"
+                android:text="00:00:10"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/menuLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="35dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/deletebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/deletenew" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Delete"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/heebo_regular"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/stopbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/stopnew" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="Stop"
+                        android:fontFamily="@font/heebo_regular"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/firstLayout"
+            android:visibility="visible"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btn_record"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_below="@+id/img_wave"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/voicechanger"
+                    android:minWidth="1sp"
+                    android:minHeight="1sp"
+                    android:onClick="onClick" />
+
+                <TextView
+                    android:id="@+id/tv_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:singleLine="true"
+                    android:text="@string/info_start_record"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/heebo_regular"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_stored_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/btn_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:layout_marginRight="30dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:id="@+id/imagePlay"
+                        android:src="@drawable/playsmallnew" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="@string/play"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/heebo_regular"/>
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:onClick="onClick"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="60dp"
+                        android:src="@drawable/nextbtn" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/heebo_regular"/>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.8">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:id="@+id/adsView"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

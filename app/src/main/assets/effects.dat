@@ -1,0 +1,122 @@
+[
+{
+    "id": "1",
+    "name": "Normal",
+    "image":"effect_image/normal.png",
+	"pitch":0,
+	"rate":0,
+	"flanger":false,
+	"reverb":[]
+  },
+  {
+    "id": "2",
+    "name": "Helium",
+    "image":"effect_image/helium.png",
+	"pitch":10,
+	"rate":0,
+	"flanger":false,
+	"reverb":[]
+  },
+  {
+    "id": "3",
+    "name": "Giant",
+    "image":"effect_image/giant.png",
+	"pitch":-5,
+	"rate":-30,
+	"flanger":false,
+	"reverb":[]
+	
+  },
+  {
+    "id": "4",
+    "name": "Robot",
+    "image":"effect_image/robot.png",
+	"pitch":3,
+	"rate":0,
+	"flanger":true,
+	"reverb":[]
+  },
+  {
+    "id": "5",
+    "name": "Cave",
+    "image":"effect_image/cave.png",
+	"pitch":0,
+	"rate":0,
+	"flanger":false,
+	"reverb":[-3.25,2000,0.8]
+  },
+  {
+    "id": "6",
+    "name": "Monster",
+    "image":"effect_image/monster.png",
+	"pitch":-8,
+	"rate":0,
+	"flanger":false,
+	"reverb":[]
+  },
+  {
+    "id": "7",
+    "name": "Nervous",
+    "image":"effect_image/nervous.png",
+	"pitch":1,
+	"rate":50,
+	"flanger":false,
+	"reverb":[]
+  },
+  {
+    "id": "8",
+    "name": "Drunk",
+    "image":"effect_image/drunk.png",
+	"pitch":-5,
+	"rate":-45,
+	"flanger":false,
+	"reverb":[]
+  },
+  {
+    "id": "9",
+    "name": "Squirrel",
+    "image":"effect_image/squirrel.png",
+	"pitch":12,
+	"rate":50,
+	"flanger":false,
+	"reverb":[]
+  },
+  {
+    "id": "10",
+    "name": "Child",
+    "image":"effect_image/child.png",
+	"pitch":6,
+	"flanger":false,
+	"rate":0,
+	"reverb":[]
+  },
+  {
+    "id": "11",
+    "name": "Death",
+    "image":"effect_image/death.png",
+	"pitch":-8,
+	"rate":0,
+	"flanger":false,
+	"reverb":[-3.25,2000,0.8]
+  },
+  {
+    "id": "12",
+    "name": "Reverse",
+    "image":"effect_image/reverse.png",
+	"pitch":0,
+	"rate":0,
+	"flanger":false,
+	"reverse":true,
+	"reverb":[]
+  },
+  {
+    "id": "13",
+    "name": "Grand Canyon",
+    "image":"effect_image/canyon.png",
+	"pitch":0,
+	"rate":-40,
+	"flanger":false,
+	"echo":true,
+	"reverb":[-3.25,2000,0.8]
+  }
+]

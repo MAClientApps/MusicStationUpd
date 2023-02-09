@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.lakshitasuman.musicstation.musicplayer.HeeboRegular xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/_15sdp"
+    android:paddingStart="?android:attr/listPreferredItemPaddingStart"
+    android:paddingLeft="?android:attr/listPreferredItemPaddingLeft"
+    android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
+    android:paddingRight="?android:attr/listPreferredItemPaddingRight"
+    android:textAppearance="?android:attr/textAppearanceListItemSmall"
+    android:textColor="#fff" />

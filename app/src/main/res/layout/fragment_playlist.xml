@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_10sdp"
+    android:paddingRight="@dimen/_10sdp"
+    android:paddingTop="@dimen/_10sdp"
+    android:background="@drawable/app_gradiant">
+
+    <LinearLayout
+        android:id="@+id/favList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        >
+        <ImageView
+            android:layout_width="@dimen/_55sdp"
+            android:src="@drawable/favorites_icon"
+            android:layout_height="@dimen/_55sdp"/>
+        <com.lakshitasuman.musicstation.musicplayer.HeeboRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/favourites"
+           android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newPlaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="@dimen/_10sdp"
+       >
+        <ImageView
+            android:layout_width="@dimen/_55sdp"
+            android:src="@drawable/ic_new_playlist"
+            android:layout_height="@dimen/_55sdp"/>
+        <com.lakshitasuman.musicstation.musicplayer.HeeboRegular
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/create_new_playlist"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noPlaylist"
+        android:visibility="gone"
+        android:gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="No Playlist"
+            android:textColor="@color/lightText"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/playlist"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/white"
+        android:fontFamily="@font/heebo_bold"
+        android:textSize="@dimen/_15sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_margin="8dp" />
+
+</LinearLayout>

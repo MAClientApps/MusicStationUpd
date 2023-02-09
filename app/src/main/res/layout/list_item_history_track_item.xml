@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/img_1"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:cardUseCompatPadding="true">
+
+        <ImageView
+            android:id="@+id/imageViewStationIcon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/song_images" />
+    </androidx.cardview.widget.CardView>
+
+
+
+    <TextView
+        android:id="@+id/textViewTrackName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:fontFamily="@font/heebo_regular"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTrackArtist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/textViewTrackArtist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:fontFamily="@font/heebo_regular"
+        android:textColor="@color/sublist"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_1"
+        app:layout_constraintTop_toBottomOf="@id/textViewTrackName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

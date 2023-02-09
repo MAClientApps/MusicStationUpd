@@ -1,0 +1,10 @@
+# Project exclude paths
+/.gradle/
+/app/build/
+/app/build/intermediates/javac/debug/classes/
+/bass/build/
+/bass/build/intermediates/javac/debug/classes/
+/chart/build/
+/chart/build/intermediates/javac/debug/classes/
+/easysignseekbar/build/
+/easysignseekbar/build/intermediates/javac/debug/classes/

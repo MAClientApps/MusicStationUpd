@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_screen_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="7.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_gravity="center"
+                android:src="@drawable/main_screen_logo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="4">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/layoutMusicPlayer"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/main_vector_bg1"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:src="@drawable/ic_music_player"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/music_player"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/heebo_bold"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/layoutOnlineRadio"
+                    android:layout_marginLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:gravity="center"
+                    android:background="@drawable/main_vector_bg2"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:src="@drawable/ic_online_radio"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/online_radio"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/heebo_bold"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/layoutRingTone"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/main_vector_bg3"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:src="@drawable/ic_ringtone_main"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/ringtone"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/heebo_bold"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:id="@+id/layoutChangeVoice"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/main_vector_bg4"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:src="@drawable/ic_change_voice_main"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/change_voice"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/heebo_bold"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/layoutCreation"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/main_vector_bg5"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:src="@drawable/ic_creation_main"
+                        android:layout_height="40dp"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/my_creation"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/heebo_bold"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="15dp"
+        android:id="@+id/adsView"/>
+
+
+
+</RelativeLayout>

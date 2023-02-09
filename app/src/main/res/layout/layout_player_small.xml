@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/actionBarSize"
+    android:background="@color/tagColor"
+
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/dividerView"
+        android:background="@color/dividerColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/headerView"
+        android:visibility="visible"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/img_1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:cardCornerRadius="@dimen/_15sdp"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/playerRadioImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                tools:src="@drawable/flag_nl" />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/textViewStationName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:fontFamily="@font/heebo_bold"
+                tools:text="Station name (Long long long long long long long long long long long long long text)" />
+            <TextView
+                android:id="@+id/textViewLiveInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:singleLine="true"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="12sp"
+                tools:text="Song (Long long long long long long long long long long long long long text)" />
+
+            <TextView
+                android:id="@+id/textViewLiveInfoBig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:ellipsize="marquee"
+                android:singleLine="false"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/barrierEndButtons"
+                app:layout_constraintStart_toEndOf="@id/img_1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Song (Long long long long long long long long long long long long long text)" />
+
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierEndButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="start"
+            app:constraint_referenced_ids="buttonPlay,buttonMore" />
+
+        <ImageButton
+            android:id="@+id/buttonPlay"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/detail_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/play" />
+        <ImageButton
+            android:id="@+id/buttonMore"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/image_button_more"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_more" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lltop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@color/topColor"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6.5"
+            android:gravity="center">
+
+            <com.lakshitasuman.musicstation.musicplayer.HeeboRegular
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:text="Album Art"
+                android:id="@+id/titleText"
+                android:textColor="#fff"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.9"
+            android:gravity="end">
+            <ImageView
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_more_frag" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/transparentCircle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:contentDescription="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_transparent_circle"
+        app:tint="?attr/colorPlayerBackground" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

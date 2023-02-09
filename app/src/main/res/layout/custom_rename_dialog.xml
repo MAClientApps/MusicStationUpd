@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_height="160dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/round_list_item"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/enter_name"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/heebo_semibold"
+
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtName"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginLeft="10dp"
+        android:lineHeight="0.5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="60dp"
+            android:text="@string/skip"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:id="@+id/btnSkip"
+            android:fontFamily="@font/heebo_bold"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/tab_selected_background"
+            android:layout_height="30dp"/>
+        <TextView
+            android:layout_width="60dp"
+            android:text="@string/ok"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:id="@+id/btnOk"
+            android:fontFamily="@font/heebo_bold"
+            android:background="@drawable/tab_selected_background"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
