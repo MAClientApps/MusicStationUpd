@@ -82,7 +82,7 @@ public class MainRadioHelper extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
-        config = new MobConfig(this, "kwdv3iw65slc");
+        config = new MobConfig(this, "kwdv3iw65slc","3x0h3j");
         Mob.onCreate(config);
         registerActivityLifecycleCallbacks(new MobLifecycleCallbacks());
 
